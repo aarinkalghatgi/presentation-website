@@ -1,0 +1,14 @@
+body{
+  background-image:linear-gradient(green,aqua);
+}
+button{
+  background: greenyellow;
+  height:30px ;
+  width: 200px;
+}
+img{
+  margin-top:3%;
+  height:605px;
+  width:1200px;
+  margin-bottom: 3%;
+}
