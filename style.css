@@ -5,6 +5,8 @@ button{
   background: greenyellow;
   height:30px ;
   width: 200px;
+  font-size: 20px;
+  color: blue;
 }
 img{
   margin-top:3%;

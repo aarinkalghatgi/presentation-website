@@ -37,6 +37,7 @@ function nextslide1()
   else if (ktracking=="6")
     {
       pic.src="https://api.asm.skype.com/v1/objects/0-wus-d5-7903087401c8d7b0e3acd0ff24e12c5b/views/imgpsh_fullsize_anim";
+    
     }
 }
 kns.onclick=nextslide1;
@@ -79,7 +80,7 @@ ktracking="1";
 krs.onclick=reset1;
 function nextslide2()
 {
- pic=document.getElementById("Mt.Ranier");
+  pic=document.getElementById("ranier");
   if (rtracking=="1")
   {
     rtracking="2";
@@ -105,4 +106,36 @@ function nextslide2()
     }
 
 }
-
+rns.onclick=nextslide2;
+function previousslide2()
+{
+  pic= document.getElementById("ranier")
+  if (rtracking=="2")
+  {
+    pic.src="https://api.asm.skype.com/v1/objects/0-wus-d4-a62a66d2da14a3a06cf7eb64d35a4b5c/views/imgpsh_fullsize_anim";
+    rtracking="1";
+  }
+  else if (rtracking=="3")
+  {
+    pic.src="https://api.asm.skype.com/v1/objects/0-wus-d8-bad7ea162bc48db511237b6ef2648e65/views/imgpsh_fullsize_anim";
+    rtracking="2";
+  }
+  else if (rtracking=="4")
+  {
+    pic.src="https://api.asm.skype.com/v1/objects/0-wus-d7-6d4de49fbe5fa7f6b0b1e18c54b075b1/views/imgpsh_fullsize_anim";
+    rtracking="3";
+  }
+  else if (rtracking=="5")
+  {
+    pic.src="https://api.asm.skype.com/v1/objects/0-wus-d6-6782b7749d2789c1c18a693d73a29929/views/imgpsh_fullsize_anim";
+    rtracking="4";
+  }
+}
+rps.onclick=previousslide2;
+function reset2()
+{
+pic=document.getElementById("ranier")
+pic.src="https://api.asm.skype.com/v1/objects/0-wus-d4-a62a66d2da14a3a06cf7eb64d35a4b5c/views/imgpsh_fullsize_anim";
+rtracking="1";
+}
+rrs.onclick=reset2;
